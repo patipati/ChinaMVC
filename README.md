@@ -60,7 +60,7 @@ RESTful Web/API
         (new mvc.context(req, res)).invoke();
     });
 
-Customized route
+Customized Routes
 --------
     // app.js
     
@@ -78,7 +78,7 @@ Using Sub Views
         context.view({ layout: false }, subView);
     };
 
-Store View Templates in Databases(or any other storage)
+Persistence View Templates in Databases(or any other storage)
 ---------
     // This feature is very useful for CMS ect.
     // callback(err<exception>, template<string>)
