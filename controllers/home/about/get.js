@@ -1,4 +1,4 @@
-﻿// 控制器：home/index/get
+﻿// Controller：home/index/get
 exports.render = function (context) {
     context.view({ layout: false });
 };
