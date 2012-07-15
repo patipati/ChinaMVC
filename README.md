@@ -78,9 +78,9 @@ Using Sub Views
         context.view({ layout: false }, subView);
     };
 
-Persistence View Templates in Databases(or any other storage)
+Persistence View Templates in Databases(or any other kinds of storage)
 ---------
-    // This feature is very useful for CMS ect.
+    // This feature is very useful to CMS ect.
     // callback(err<exception>, template<string>)
     function getTemplate(id, callback){
         var template = '!!! 5'; // TODO: get template content from storage.
