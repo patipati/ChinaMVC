@@ -4,7 +4,7 @@ var app = module.exports = express.createServer(express.bodyParser())
 // configuring
 .configure(function () {
     this.set('views', path.join(__dirname, "views"));
-    this.set('view engine', 'txt');
+    this.set('view engine', 'jade');
     this.register('txt', require('jade'));
 });
 
@@ -29,4 +29,4 @@ app.put(/.*/, function (req, res) {
     (new mvc.context(req, res)).invoke();
 });
 
-app.listen(process.env.PORT);
+app.listen(process.env.PORT || 8080);
